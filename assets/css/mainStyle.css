@@ -1,0 +1,56 @@
+
+.container {
+  width: 75vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;  
+  max-width:50rem;
+  margin: 0 auto;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+hr {
+  height: 1.5px;
+  background-color: rgb(40,167,69);
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.answer-options-txt{
+  font-weight: bold;
+}
+
+#hiScoresList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 4rem;
+}
+
+#yourScore {
+  color: rgb(4, 83, 77);
+}
+
+.quiz-score {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-score:hover {
+  transform: scale(1.025);
+}
+
+.btnCtr {
+  justify-content: center;
+  align-items: center;
+}

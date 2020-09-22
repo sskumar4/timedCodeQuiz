@@ -3,27 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timed Code Quiz</title>
+  <title>Javascript Quiz</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/mainStyle.css" />
-  <link rel="stylesheet" href="assets/css/quiz_scores.css" />
+  
 </head>
 <body>
-   <!--Begin container-->
-   <div class="container col d-flex justify-content-center mt-5 ">
- 
-    <div class="card border-primary" style="width: 60rem">
+  <div class="card-header mx-auto border border-success mt-5" style="width: 60rem">
   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-  <div class="card-body">
+    <div class="card-body">
     <h2 class="card-title" style="text-align: center">Javascript quiz</h2>
-    
+    <hr />
+      <form class="margin-auto">
+      <h3 id="your_score" class="lab">Your Timed  Quiz score is: </h3>
+      <div class="form-group">
+          <label class="lab1" for="username">Enter Your Initials:</label>
+          <input name="initials" id="initials" />
+          <button type="submit" class="btn btn-success" id="saveBtn" onclick="saveScore(event)" disabled>Submit</button>
+      </div>
+      </form>
     </div>
   </div>
-</div>
-</div>
-<!-- End container-->
 
-<script src="quiz_scores.js"></script>
+  <script src="quizComplete.js"></script>
 </body>
 </html>

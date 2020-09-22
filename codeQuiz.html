@@ -4,49 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timed Code Quiz</title>
+  <title>Javascript quiz</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/mainStyle.css" />
 </head>
 <body>
 
-    <div class="container col d-flex justify-content-center mt-5 ">
- 
-        <div class="card border-primary" style="width: 60rem">
-      <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+     <div class="card-header mx-auto border border-success mt-5" style="width: 60rem"> 
       <div class="card-body">
         <h2 class="card-title" style="text-align: center">Javascript quiz</h2>
-        
-
-        <!--Horizontal line-->
         <hr />
+        <aside  class="justify-center flex-column hidden">
+            <!--Container for View high scores link and Timer-->
+            <aside>
+                <div>
+                    <a href="quizScores.html" class="score-timer btn btn-dark" role="button">View High Scores</a> 
+                    <p id="timer-txt" style="font-size:18px; font-weight:bold; text-decoration:none; color:rgb(40,167,69)">
+                    </p>
+                </div>
+            </aside>
+        </aside>
 
         <!--Display questions-->
-        <h3 class="question" id="question">0</h3>
+        <h3 class="question" id="question-txt">0</h3>
         <!--Display four Answer Choices-->
         <div class="choice-container">
-            <p class="choice-prefix">1</p>
-            <p class="choice-text" data-number="1"></p>
+            <!-- <p class="choice-prefix">1</p> -->
+            <p class="answer-options-txt" data-number="1"></p>
         </div>
         <div class="choice-container">
-            <p class="choice-prefix">2</p>
-            <p class="choice-text" data-number="2"></p>
+            <!-- <p class="choice-prefix">2</p> -->
+            <p class="answer-options-txt" data-number="2"></p>
         </div>
         <div class="choice-container">
-            <p class="choice-prefix">3</p>
-            <p class="choice-text" data-number="3"></p>
+            <!-- <p class="choice-prefix">3</p> -->
+            <p class="answer-options-txt" data-number="3"></p>
         </div>
 
         <div class="choice-container">
-            <p class="choice-prefix">4</p>
-            <p class="choice-text" data-number="4"></p>
+            <!-- <p class="choice-prefix">4. </p> -->
+             <p class="answer-options-txt" data-number="4"></p>
         </div>
-        <div id="result-container" style="color:rgb(4, 83, 77)">
+        <div id="result-container" style="color:rgb(40,167,69)">
         </div>
     </div>
-</div>
-</div>
+ </div>
 <!-- End container-->
 <script src="codeQuiz.js"></script>
 
