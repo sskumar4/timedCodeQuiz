@@ -1,4 +1,4 @@
- [![picture 2](assets/images/tcq.JPG)](https://sskumar4.github.io/timedCodeQuiz/)  
+ [![picture 2](assets/images/tcq.jpg)](https://sskumar4.github.io/timedCodeQuiz/)  
 
 # Links to deployed application and repository:
 * [Deployed Application](https://sskumar4.github.io/timedCodeQuiz)
