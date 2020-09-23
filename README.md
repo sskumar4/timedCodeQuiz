@@ -15,8 +15,7 @@ Javascript Quiz is a timed quiz app using JavaScript that stores scores. The qui
 HTML, CSS, Javascript
 
 # Features
-Created the following
-html files:
+Created the following files:
   * index.html, codeQuiz.html quizComplete.html, quizScore.html
 js files:
   * codeQuiz.js, quizComplete.js, quizScores.js
