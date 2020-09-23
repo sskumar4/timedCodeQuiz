@@ -9,7 +9,7 @@
 # Title: Javascript Code Quiz
 
 # Introduction:
-Javascript Code Quiz is a timed quiz app using JavaScript that stores scores. The quiz consists of multiple-choice questions with color change feature for right and wrong answer. The app will run in the browser and feature dynamically updated HTML and CSS powered by JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+Javascript Quiz is a timed quiz app using JavaScript that stores scores. The quiz consists of multiple-choice questions with color change feature for right and wrong answer. The app will run in the browser and feature dynamically updated HTML and CSS powered by JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
 # Technologies:
 HTML, CSS, Javascript
@@ -32,7 +32,7 @@ Developed the site with the following features:
   * When the answer is correct, the word Right turns green
   * When the answer is incorrect, the word wrong turns red. Also 10 seconds is subtracted from the timer for each incorrect answer
   * The quiz ends When all questions are answered or the timer reaches 0
-  * When the quiz is over the score is displayed and the user can save their initials
+  * When the quiz is completed, the score is displayed and the user can save their initials
   * The user can start a new quiz by clicking "Go Back" button
 
 Used HTML validation service to ensure that each page has valid HTML.

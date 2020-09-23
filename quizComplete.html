@@ -11,18 +11,23 @@
 </head>
 <body>
   <!--Card to display the quiz score and enter initials-->
-  <div class="card-header mx-auto border border-success mt-5" style="width: 60rem">
-    <div class="card-body">
-    <h2 class="card-title" style="text-align: center">Javascript quiz</h2>
-    <hr />
-      <form class="margin-auto">
-      <h3 id="your_score" class="lab">Your Timed  Quiz score is: </h3>
-      <div class="form-group">
-          <label class="lab1" for="username">Enter Your Initials:</label>
+  <div class="container-md mp-2">
+    <!--Card to display the instruction text for the quiz-->
+    <div class="card-header mx-auto border border-success m-5 row" style="max-width: 60rem">
+      <div class="card"> 
+     <div class="card-body">
+        <h2 class="card-title" style="text-align: center">Javascript quiz</h2>
+        <hr />
+        <form class="margin-auto">
+        <h3 id="your_score" class="lab">Your Timed  Quiz score is: </h3>
+        <div class="form-group">
+          <label class="lab1">Enter Your Initials:</label>
           <input name="initials" id="initials" />
           <button type="submit" class="btn btn-success" id="saveBtn" onclick="saveScore(event)" disabled>Submit</button>
+        </div>
+        </form>
       </div>
-      </form>
+      </div>
     </div>
   </div>
 

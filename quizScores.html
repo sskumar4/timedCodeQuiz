@@ -10,24 +10,26 @@
   <link rel="stylesheet" href="assets/css/quizScores.css" />
 </head>
 <body>
-   <!--Card to display the quiz score-->
-  <div class="card-header mx-auto border border-success mt-5 text-center" style="width: 60rem">
-    <div class="card-body">
-      <h2 class="card-title" style="text-align: center">Javascript quiz</h2>
-      <div>
-      <hr />
+  <!--Card to display the quiz score-->
+  <div class="container-md mp-2">
+    <!--Card to display the instruction text for the quiz-->
+    <div class="card-header mx-auto border border-success m-5 row" style="max-width: 60rem">
+      <div class="card"> 
+      <div class="card-body" style="max-width: 40rem">
+        <h2 class="card-title" style="text-align: center">Javascript quiz</h2>
+        <hr />
         <!--button to start quiz-->
         <button class="mt-2 btn btn-success text-center" onclick="window.location.href='index.html'">Go Back</button>
        <!--Button to clear the displayed high scores-->
         <button class="mt-2 btn btn-dark" id="clear_hi" onclick="window.location.href='quizScores.html'">Clear High scores</button>
       </div>
       <div id="highScores" class="mt-2 flex-center flex-column">
-      <h2 class="text-center" id="finalScore">High Scores</h2>
-      <ul id="hi-scores"></ul>
+        <h2 class="text-center" id="finalScore">High Scores</h2>
+       <ul id="hi-scores"></ul>
       </div>
     </div>
+    </div>
   </div>
-
 <script src="quizScores.js"></script>
 </body>
 </html>

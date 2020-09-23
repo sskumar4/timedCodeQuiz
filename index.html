@@ -4,23 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Javascript Quiz</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />  
   <link rel="stylesheet" href="assets/css/mainStlye.css" />
 </head>
 <body>
-<!--Card to display the instruction text for the quiz-->
-  <div class="card-header mx-auto border border-success mt-5" style="width: 60rem">
+  <div class="container-md mp-2">
+    <!--Card to display the instruction text for the quiz-->
+    <div class="card-header mx-auto border border-success m-5 row" style="max-width: 60rem">
+      <div class="card"> 
       <div class="card-body">
         <h2 class="card-title" style="text-align: center">Javascript quiz</h2>
         <hr />
         <p class="card-text" style="font-size: 25px">Welcome! Challenge yourself and take the javascript quiz within the time limit of 80 secs. For each correct answer, 5 seconds will be added to avaialble quiz time and for each wrong answer, 10 seconds will be deducted from the available quiz time.</p>
-        <div class="col-md-12 text-center">
+          <div class="text-center">
           <a href="codeQuiz.html" class="btn btn-success">Take Quiz</a>
+          </div>
         </div>
       </div>
-  </div>
-
+    </div> 
+    </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
