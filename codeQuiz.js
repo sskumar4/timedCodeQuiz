@@ -1,11 +1,11 @@
-//Variables that point to HTML elements in codeQuiz.html
+//DOM Variables
 const questionTxt = document.getElementById("question-txt");
 const ansOptionsTxt = Array.from(document.getElementsByClassName("answer-options-txt"));
 const timerTxt = document.getElementById("timer-txt");
 
 const resultDiv = document.getElementById("result-container");
 
-
+//Quiz Questions
 const quizlet = [{
   question: "In Javascript, how do you prompt users with messages and at the same time requesting user inputs?",
   answer1: "1. Alert()",
@@ -70,7 +70,7 @@ const quizlet = [{
 }
 ];
 let timerId;
-// max quiz time of 90 seconds allowed
+//maximum quiz time of 80 seconds 
 let remainingQuizTime = 80;
 let ongoingQuestion = {};
 let readyForUserInput = false;
@@ -86,15 +86,14 @@ function quizTimer() {
           localStorage.setItem("Text", "Time Up.");
           return window.location.assign("quizComplete.html");
       }
-
   }, 1000);
 }
 
-
-//Constant that holds the maximum number of questions
+//maximum number of questions
 const MAX_QUESTIONS = 7;
-//function to start the game game.js loads
-startGame = () => {
+
+//begin game
+beginGame = () => {
     questionCounter = 0;
     score = 0;
     unpresentedQuizlet = [...quizlet];
@@ -103,15 +102,14 @@ startGame = () => {
 };
 
 
-//function to get new question and save the score in localstorage
+//Get new question and save the score in localstorage
 function presentNextQuestion() {
 
     if (unpresentedQuizlet.length === 0 || questionCounter >= MAX_QUESTIONS || remainingQuizTime < 1) {
         if (remainingQuizTime < 0)
             remainingQuizTime = 0;
         localStorage.setItem("yourScore", remainingQuizTime);
-        localStorage.setItem("endText", "");
-        //go to the end page
+        localStorage.setItem("completionText", "");
         return window.location.replace("quizComplete.html");
 
     }
@@ -125,7 +123,7 @@ function presentNextQuestion() {
     let ansChoice =0;
     do {
       let ansOptNum =ansOptionsTxt[ansChoice].dataset["number"];
-      
+
       ansOptionsTxt[ansChoice].innerHTML = ongoingQuestion["answer" + ansOptNum];
       ansChoice++;
     } while (ansChoice < ansOptionsLength);
@@ -136,9 +134,10 @@ function presentNextQuestion() {
     readyForUserInput = true;
 };
 
-startGame();
+beginGame();
 quizTimer();
-//Add EventListeners and process user's answer
+
+//process user's answer and add EventListeners
 
 let ansOption =0;
 do {
@@ -152,7 +151,7 @@ do {
           selectedAnswer == ongoingQuestion.correctAnswer ? "Right" : "Wrong";
       (rightOrWrong === "Right") ? remainingQuizTime +=5 : remainingQuizTime -=10;
 
-      //Add 'Right!' or 'Wrong' text and horizontal line to be presented for 1 sec
+      //Right or Wrong text and horizontal line below the quetions
 
       selectedChoice.parentElement.classList.add(rightOrWrong);
       resultStr = rightOrWrong + "!";
@@ -161,7 +160,7 @@ do {
       resultStr = (rightOrWrong === "Right") ? resultStr.fontcolor("green"):resultStr.fontcolor("red");
 
       resultDiv.innerHTML = `${`<br/><hr /><br/>` + resultStr }`;
-//A new question is selected by calling presentNextQuestion              
+//calling new question
 setTimeout(() => {
 
 selectedChoice.parentElement.classList.remove(rightOrWrong);

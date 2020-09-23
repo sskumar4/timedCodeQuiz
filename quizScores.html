@@ -10,16 +10,15 @@
   <link rel="stylesheet" href="assets/css/quizScores.css" />
 </head>
 <body>
-   <!--Begin container-->
+   <!--Card to display the quiz score-->
   <div class="card-header mx-auto border border-success mt-5 text-center" style="width: 60rem">
-  <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
     <div class="card-body">
       <h2 class="card-title" style="text-align: center">Javascript quiz</h2>
       <div>
-      <!--Button to the start quiz again-->
       <hr />
+        <!--button to start quiz-->
         <button class="mt-2 btn btn-success text-center" onclick="window.location.href='index.html'">Go Back</button>
-      <!--Button to clear the displayed high scores-->
+       <!--Button to clear the displayed high scores-->
         <button class="mt-2 btn btn-dark" id="clear_hi" onclick="window.location.href='quizScores.html'">Clear High scores</button>
       </div>
       <div id="highScores" class="mt-2 flex-center flex-column">
@@ -29,7 +28,6 @@
     </div>
   </div>
 
-<!-- End container-->
 <script src="quizScores.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
- [![picture 2](assets/images/CQ-thumbnail.JPG)](https://sskumar4.github.io/CodeQuiz/)  
+ [![picture 2](assets/images/tcq.JPG)](https://sskumar4.github.io/timedCodeQuiz/)  
 
 # Links to deployed application and repository:
 * [Deployed Application](https://sskumar4.github.io/timedCodeQuiz)
@@ -25,14 +25,14 @@ css files
 
 Developed the site with the following features:
   * User is presented with a start quiz button to begin the quiz
-  * A timer starts with total 75 secs in the top right of the app and immediately the user is presented with a question
+  * A timer starts with total 80 secs and immediately the user is presented with a question
   * When one question is answered, the user is presented with another question (Upto seven questions)
-  * A "Right" or "Wrong" message is displayed below the nmultiple choice questions when a user selects an answer
-  * When the answer is correct, a sound is heard and the button color turns green 
-  * When the answer is incorrect, a sound is heard and the button color turns red. Also 10 seconds is subtracted from
-    the timer for each incorrect answer
-  * The quiz ends When all questions are answered or the timer reaches 0 
-  * When the quiz is over, the user can save their initials and the time score
+  * For each correct answer, 5 seconds will be added to avaialble quiz time and for each wrong answer, 10 seconds will be deducted from the available quiz time
+  * A "Right" or "Wrong" message is displayed below the multiple choice questions when a user selects an answer
+  * When the answer is correct, the word Right turns green
+  * When the answer is incorrect, the word wrong turns red. Also 10 seconds is subtracted from the timer for each incorrect answer
+  * The quiz ends When all questions are answered or the timer reaches 0
+  * When the quiz is over the score is displayed and the user can save their initials
   * The user can start a new quiz by clicking "Go Back" button
 
 Used HTML validation service to ensure that each page has valid HTML.
